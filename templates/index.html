@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Buddy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Travel Buddy Logo">
+      </div>
+      <ul>
+        <div class="btn"><i class="fas fa-times close-btn"></i></div>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="/tours">Tours</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="btn"><i class="fas fa-bars menu-btn"></i></div>
+    </nav>
+  </div>
+</header>
+
+<!-- Swiper Slider -->
+<main>
+  <div class="slider-container swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="overlay">
+          <img src="{{ url_for('static', filename='images/img1.jpg') }}" alt="">
+          <div class="img-overlay">
+            <p>Let's travel the world with us</p>
+            <h2><span>Discover </span>The World</h2>
+            <h2>With Our Guide</h2>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="overlay">
+          <img src="{{ url_for('static', filename='images/img 2.jpg') }}" alt="">
+          <div class="img-overlay">
+            <p>Let's travel the world with us</p>
+            <h2><span>Discover </span>The World</h2>
+            <h2>With Our Guide</h2>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="overlay">
+          <img src="{{ url_for('static', filename='images/img 3.jpg') }}" alt="">
+          <div class="img-overlay">
+            <p>Let's travel the world with us</p>
+            <h2><span>Discover </span>The World</h2>
+            <h2>With Our <span>Travelo</span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</main>
+
+<!-- Search Section -->
+<section id="location-search">
+  <div class="container">
+    <div class="form-wrapper">
+      <form action="#">
+        <input type="text" placeholder="Where to?" class="form-control" />
+        <select class="form-control">
+          <option value="Destination">Destination</option>
+          <option value="Hampi">Hampi</option>
+          <option value="Jog Falls">Jog Falls</option>
+          <option value="Mysore">Mysore</option>
+          <option value="Udupi">Udupi</option>
+        </select>
+        <select class="form-control">
+          <option value="duration">Duration</option>
+          <option value="day-1">1 Day Tour</option>
+          <option value="2-4 Days">2-4 Days Tour</option>
+          <option value="5-7 Days">5-7 Days Tour</option>
+          <option value="7+ Days">7+ Days</option>
+        </select>
+        <button type="button" class="primary-btn">Search Now</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <div class="container">
+    <div class="about-content-wrapper">
+      <div class="agency-left-side">
+        <p class="heading-normal-txt">THE BEST TRAVEL AGENCY</p>
+        <h2 class="headings">DISCOVER THE <span>WORLD</span>WITH OUR GUIDE</h2>
+        <p class="lead">You can discover the underrated places with good tourism.</p>
+        <ul>
+          <li><div class="icons"><i class="fa fa-check"></i><p>20 Years of Experience</p></div></li>
+          <li><div class="icons"><i class="fa fa-check"></i><p>150 Tour Destination</p></div></li>
+          <li><div class="icons"><i class="fa fa-phone-volume"></i><p>9366925006</p></div></li>
+        </ul>
+      </div>
+      <div class="agency-right-side">
+        <div class="img">
+          <img src="{{ url_for('static', filename='images/img4.jpg') }}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Popular Tours -->
+<div id="choose-place">
+  <div class="container">
+    <p class="heading-normal-txt">CHOOSE YOUR PLACE</p>
+    <h2 class="headings">POPULAR <span>TOURS</span></h2>
+    <div class="choose-wrapper">
+      <div class="img-left-side">
+        <div class="lg-img">
+          <img src="{{ url_for('static', filename='images/img5.jpg') }}" alt="">
+          <div class="img-content">
+            <h2>GOKARNA BEACH</h2>
+            <div class="hidden-content">
+              <span><i class="fa fa-clock"></i>10 Days</span>
+              <span><i class="fa fa-user"></i>12+</span>
+              <span><i class="fa fa-location-dot"></i>GOKARNA BEACH</span>
+            </div>
+          </div>
+          <div class="price-label"><p>RS2000</p></div>
+        </div>
+      </div>
+      <div class="img-right-side">
+        <div class="lg-img">
+          <img src="{{ url_for('static', filename='images/img6.jpg') }}" alt="">
+          <div class="img-content">
+            <h2>UDUPI BEACH</h2>
+            <div class="hidden-content">
+              <span><i class="fa fa-clock"></i>10 Days</span>
+              <span><i class="fa fa-user"></i>12+</span>
+              <span><i class="fa fa-location-dot"></i>UDUPI BEACH</span>
+            </div>
+          </div>
+          <div class="price-label"><p>RS2000</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="ft-content">
+        <div class="icon"><i class="fa fa-phone-volume"></i></div>
+        <div class="content"><p class="lead">Call Us</p><p>+91 9366925006</p></div>
+      </div>
+      <div class="ft-content">
+        <div class="icon"><i class="fa fa-envelope-open"></i></div>
+        <div class="content"><p class="lead">Write for us</p><p>anuragkumarsah123abc@gmail.com</p></div>
+      </div>
+      <div class="ft-content">
+        <div class="icon"><i class="fa fa-map-location"></i></div>
+        <div class="content"><p class="lead">Address</p><p>Jain University, Bengaluru</p></div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy;2025 TravelBuddies. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/swiper.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

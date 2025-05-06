@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TOURS</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+  <div id="choose-place">
+    <div class="container">
+      <p class="heading-normal-txt">CHOOSE YOUR PLACE</p>
+      <h2 class="headings">POPULAR <span>TOURS</span></h2>
+      <div class="choose-wrapper">
+        <div class="img-left-side">
+          <div class="lg-img"> 
+            <img src="{{ url_for('static', filename='images/img5.jpg') }}" alt="Gokarna">
+            <div class="img-content">
+              <h2>GOKARNA BEACH</h2>
+              <div class="hidden-content">
+                <span><i class="fa fa-clock"></i>10 Days</span>
+                <span><i class="fa fa-user"></i>12+</span>
+                <span><i class="fa fa-location-dot"></i><a href="/gokarna">GOKARNA BEACH</a></span>
+              </div>
+            </div>
+            <div class="price-label"><p>RS2000</p></div>
+          </div>
+        </div>
+        <div class="img-right-side">
+          <div class="lg-img">
+            <img src="{{ url_for('static', filename='images/img6.jpg') }}" alt="Udupi">
+            <div class="img-content">
+              <h2>UDUPI BEACH</h2>
+              <div class="hidden-content">
+                <span><i class="fa fa-clock"></i>10 Days</span>
+                <span><i class="fa fa-user"></i>12+</span>
+                <span><i class="fa fa-location-dot"></i><a href="/udupi">UDUPI BEACH</a></span>
+              </div>
+            </div>
+            <div class="price-label"><p>RS2000</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Destinations -->
+      <div class="row-wise-img">
+        <div class="lg-img">
+          <img src="{{ url_for('static', filename='images/img7.jpg') }}" alt="Hampi">
+          <div class="img-content">
+            <h2>HAMPI</h2>
+            <div class="hidden-content">
+              <span><i class="fa fa-clock"></i>10 Days</span>
+              <span><i class="fa fa-user"></i>12+</span>
+              <span><i class="fa fa-location-dot"></i><a href="/hampi">HAMPI</a></span>
+            </div>
+          </div>
+          <div class="price-label"><p>RS1000</p></div>
+        </div>
+        <div class="lg-img">
+          <img src="{{ url_for('static', filename='images/img8.webp') }}" alt="Ramanagara">
+          <div class="img-content">
+            <h2>RAMANAGARA HILLS</h2>
+            <div class="hidden-content">
+              <span><i class="fa fa-clock"></i>10 Days</span>
+              <span><i class="fa fa-user"></i>12+</span>
+              <span><i class="fa fa-location-dot"></i><a href="/ramanagara">RAMANAGARA HILLS</a></span>
+            </div>
+          </div>
+          <div class="price-label"><p>RS500</p></div>
+        </div>
+        <div class="lg-img">
+          <img src="{{ url_for('static', filename='images/img9.jpg') }}" alt="Mysore">
+          <div class="img-content">
+            <h2>MYSORE</h2>
+            <div class="hidden-content">
+              <span><i class="fa fa-clock"></i>10 Days</span>
+              <span><i class="fa fa-user"></i>12+</span>
+              <span><i class="fa fa-location-dot"></i><a href="/mysore">MYSORE</a></span>
+            </div>
+          </div>
+          <div class="price-label"><p>RS2000</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
